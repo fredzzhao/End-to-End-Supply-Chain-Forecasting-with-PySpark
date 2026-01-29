@@ -32,11 +32,14 @@ The pipeline consists of five key stages:
 ## Results Snapshot
 The model outputs a final **Replenishment Plan** table:
 
-| Sub-Category | Cycle Stock (Predicted) | Safety Stock (Buffer) | Total Inventory Needed |
-| :--- | :--- | :--- | :--- |
-| Copiers | 3766 | 8266 | 12032 |
-| Phones | 2100 | 500 | 2600 |
-| ... | ... | ... | ... |
+| Year | Week | Sub-Category | Forecasted Demand<br>(Cycle Stock) | Safety Buffer<br>(Risk Mitigation) | **Total Order Qty** |
+| :--- | :--- | :--- | :---: | :---: | :---: |
+| 2018 | 30 | **Copiers** | 4,337 | 8,235 | **12,572** |
+| 2018 | 46 | **Copiers** | 4,153 | 8,235 | **12,388** |
+| 2017 | 26 | **Copiers** | 4,137 | 8,235 | **12,372** |
+| 2017 | 21 | **Copiers** | 4,088 | 8,235 | **12,323** |
+| 2018 | 12 | **Copiers** | 3,980 | 8,235 | **12,215** |
+| ... | ... | ... | ... | ... | ... |
 
 *(Note: Safety stock varies by category volatility. High-risk categories like 'Copiers' are assigned higher buffers.)*
 
