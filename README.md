@@ -1,5 +1,7 @@
 # Demand Forecasting & Inventory Optimization Engine (PySpark)
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/fredzzhao/End-to-End-Supply-Chain-Forecasting-with-PySpark/blob/main/Inventory_Optimization_Engine.ipynb)
+
 > **Personal project** on the public **Kaggle Superstore Sales** dataset, built to practice an end-to-end forecasting pipeline in PySpark. It contains no employer data.
 
 The pipeline turns 9,800 raw order lines (2015–2018) into **weekly sales forecasts for 17 product sub-categories**, checks them against simple baselines, and converts forecast error into **safety buffers at a 95% service level**.
